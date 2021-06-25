@@ -42,3 +42,4 @@ for (path, dir, files) in os.walk(sergdir):#지정한 파일 경로 탐색
         print("분석 완료")
         window.update()
 k.close()#log.txt 닫음
+window.mainloop()
