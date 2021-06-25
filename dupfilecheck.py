@@ -7,8 +7,7 @@ name=[]
 md=[]
 pht=[".jpg",".gif",".png",".bmp",".webp",".jfif",".jpeg"]
 k = open("log.txt", "w")#log.txt 생성
-sergdir=filedialog.askdirectory(parent=window,title="검색하려는 디렉토리의 이름은?")#input("검색하려는 디렉토리의 이름은?:")
-count=0
+sergdir=filedialog.askdirectory(parent=window,title="검색하려는 디렉토리의 이름은?")
 label1=Label(window,text="")
 label2=Label(window,text="")
 def fin():
@@ -22,7 +21,7 @@ for (path, dir, files) in os.walk(sergdir):#지정한 파일 경로 탐색
         pt=os.path.join(path, fn)#파일 경로
         if(os.path.isdir(pt)):#pt가 디렉토리로 판명이 되면 오류가 남. 따라서 예외 처리를 해주어야 함.
             continue
-        label1=Label(window,text=pt+"분석중")#print(pt+"분석중....")
+        label1=Label(window,text=pt+"분석중")
         with open(pt, "rb") as f:#md5값을 만드는 부분. md5가 같으면 같은 파일이라고 볼 수 있음.
             data=hashlib.md5()
             while test := f.read(8192):
