@@ -30,7 +30,7 @@ for (path, dir, files) in os.walk(sergdir):#지정한 파일 경로 탐색
                 data.update(test)
         md5=data.hexdigest()
         f.close()
-        label2=Label(window,text=md5)#print(md5)
+        label2=Label(window,text="...")#print(md5)
         label1.pack()
         label2.pack()
         if md.count(md5)==0:#일치하는 md5 값이 없다면 해당 값과 이름을 기록
