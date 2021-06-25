@@ -6,6 +6,7 @@ window=Tk()
 #window.withdraw()
 name=[]
 md=[]
+pht=[".jpg",".gif","png","bmp"]
 k = open("log.txt", "w")#log.txt 생성
 sergdir=filedialog.askdirectory(parent=window,title="검색하려는 디렉토리의 이름은?")#input("검색하려는 디렉토리의 이름은?:")
 count=0
@@ -30,8 +31,14 @@ for (path, dir, files) in os.walk(sergdir):#지정한 파일 경로 탐색
             print("분석 완료")
             window.update()
             continue
-        k.write(pt+"와"+name[md.index(md5)]+"가 같은 파일인거 같습니다. md5="+md5+"\n")#파일이 겹치면 해당 사실을 log.txt에 기록
-        os.remove(pt)#겹치는 파일 삭제
+        photocheck=False
+        for i in pht:
+            if i in pt:
+                photocheck=True
+                break
+        if(photocheck):
+            k.write(pt+"와"+name[md.index(md5)]+"가 같은 파일인거 같습니다. md5="+md5+"\n")#파일이 겹치면 해당 사실을 log.txt에 기록
+            os.remove(pt)#겹치는 파일 삭제
         print("분석 완료")
         window.update()
 k.close()#log.txt 닫음
