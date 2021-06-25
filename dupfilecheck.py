@@ -1,9 +1,13 @@
 import os
 import hashlib
+from tkinter import *
+from tkinter import filedialog
+window=Tk()
+window.withdraw()
 name=[]
 md=[]
 k = open("log.txt", "w")#log.txt 생성
-sergdir=input("검색하려는 디렉토리의 이름은?:")
+sergdir=filedialog.askdirectory(parent=window,title="검사하고 싶은 디렉토리는?")#input("검색하려는 디렉토리의 이름은?:")
 count=0
 for (path, dir, files) in os.walk(sergdir):#지정한 파일 경로 탐색
     for fn in files:#파일들을 순차적으로 탐색
