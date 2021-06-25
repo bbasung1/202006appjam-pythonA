@@ -5,7 +5,7 @@ from tkinter import filedialog
 window=Tk()
 name=[]
 md=[]
-pht=[".jpg",".gif",".png",".bmp",".webp"]
+pht=[".jpg",".gif",".png",".bmp",".webp",".jfif"]
 k = open("log.txt", "w")#log.txt 생성
 sergdir=filedialog.askdirectory(parent=window,title="검색하려는 디렉토리의 이름은?")#input("검색하려는 디렉토리의 이름은?:")
 count=0
@@ -46,7 +46,9 @@ for (path, dir, files) in os.walk(sergdir):#지정한 파일 경로 탐색
             k.write(pt+"가"+name[md.index(md5)]+"와 같은 파일인거 같아 삭제하였습니다. md5="+md5+"\n")#파일이 겹치면 해당 사실을 log.txt에 기록
             label1.config(text=pt+"가"+name[md.index(md5)]+"와 같은 파일 인것 같아 삭제하였습니다.")
             window.update()
-            os.remove(pt)#겹치는 파일 삭제
+            os.remove(min(pt,name[md.index(md5)]))#겹치는 파일 삭제
+            if(min(pt,name[md.index(md5)])==pt):
+                name[md.index(md5)]=pt
         fin()
 k.close()#log.txt 닫음
 label1=Label(text="분석이 완료되었습니다.log.txt를 참고하여 어떤 파일들이 삭제되었는지 내용을 확인하실 수 있습니다.")
