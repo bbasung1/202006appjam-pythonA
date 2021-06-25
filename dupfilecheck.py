@@ -43,21 +43,12 @@ for (path, dir, files) in os.walk(sergdir):#지정한 파일 경로 탐색
                 photocheck=True
                 break
         if(photocheck):
-            remv=min(pt,name[md.index(md5)])
-            k.write(remv+"가"+max(pt,name[md.index(md5)])+"와 같은 파일인거 같아 삭제하였습니다. md5="+md5+"\n")#파일이 겹치면 해당 사실을 log.txt에 기록
-            label1.config(text=remv+"가"+max(pt,name[md.index(md5)])+"와 같은 파일 인것 같아 삭제하였습니다.")
+            k.write(name[md.index(md5)]+"가"+pt+"와 같은 파일인거 같아 삭제하였습니다. md5="+md5+"\n")#파일이 겹치면 해당 사실을 log.txt에 기록
+            label1.config(text=name[md.index(md5)]+"가"+pt+"와 같은 파일 인것 같아 삭제하였습니다.")
             window.update()
-            if(pt==name[md.index(md5)]):
-                fin()
-                continue
-            try:
-                os.remove(remv)#겹치는 파일 삭제
-            except:
-                os.remove(pt)
-                name[md.index(md5)]=pt
-            if(min(remv)==pt):
-                name[md.index(md5)]=pt
-        fin()
+            os.remove(name[md.index(md5)])
+            name[md.index(md5)]=pt
+            fin()    
 k.close()#log.txt 닫음
 label1=Label(text="분석이 완료되었습니다.log.txt를 참고하여 어떤 파일들이 삭제되었는지 내용을 확인하실 수 있습니다.")
 label1.pack()
