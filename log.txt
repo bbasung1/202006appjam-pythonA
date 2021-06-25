@@ -1,12 +1,5 @@
-C:/Users/chuns/Downloads/202006appjam/umd\20191210_114656.jpg가C:/Users/chuns/Downloads/202006appjam/umd\20191210_114656 - 복사본.jpg와 같은 파일인거 같아 삭제하였습니다. md5=2d9daf70ce0eb55242706c8856fc9d22
-C:/Users/chuns/Downloads/202006appjam/umd\20191210_122908.jpg가C:/Users/chuns/Downloads/202006appjam/umd\20191210_122908 - 복사본.jpg와 같은 파일인거 같아 삭제하였습니다. md5=73fa855bfbeb47cf62b9c6d6536fe9b7
-C:/Users/chuns/Downloads/202006appjam/umd\20200213_180409.jpg가C:/Users/chuns/Downloads/202006appjam/umd\20200213_180409 - 복사본.jpg와 같은 파일인거 같아 삭제하였습니다. md5=2f9ca02d966ff1e764962393ee80c2fc
-C:/Users/chuns/Downloads/202006appjam/umd\20200403_001453.jpg가C:/Users/chuns/Downloads/202006appjam/umd\20200403_001453 - 복사본.jpg와 같은 파일인거 같아 삭제하였습니다. md5=3e50d0b9742f62a7e06d5e79ab1f2977
-C:/Users/chuns/Downloads/202006appjam/umd\gloryday.png가C:/Users/chuns/Downloads/202006appjam/umd\gloryday - 복사본.png와 같은 파일인거 같아 삭제하였습니다. md5=a011777940a4e60ffe634e1b524bb091
-C:/Users/chuns/Downloads/202006appjam/umd\illust_71775808_20200508_044829.jpg가C:/Users/chuns/Downloads/202006appjam/umd\illust_71775808_20200508_044829 - 복사본.jpg와 같은 파일인거 같아 삭제하였습니다. md5=965f1d798d53134ff8eed5ef74760daa
-C:/Users/chuns/Downloads/202006appjam/umd\KakaoTalk_20201012_150052452.jpg가C:/Users/chuns/Downloads/202006appjam/umd\KakaoTalk_20201012_150052452 - 복사본.jpg와 같은 파일인거 같아 삭제하였습니다. md5=db31d8a0edb290929a79a0b45686b037
-C:/Users/chuns/Downloads/202006appjam/umd\musiclte1.png가C:/Users/chuns/Downloads/202006appjam/umd\musiclte1 - 복사본.png와 같은 파일인거 같아 삭제하였습니다. md5=9c246f00ad77518714cbe89a2a9766ee
-C:/Users/chuns/Downloads/202006appjam/umd\Think_Blue.jpg가C:/Users/chuns/Downloads/202006appjam/umd\Think_Blue - 복사본.jpg와 같은 파일인거 같아 삭제하였습니다. md5=3e9c553183c4edfaae423609419734dd
-C:/Users/chuns/Downloads/202006appjam/umd\tlsqkf.jpg가C:/Users/chuns/Downloads/202006appjam/umd\tlsqkf - 복사본.jpg와 같은 파일인거 같아 삭제하였습니다. md5=2559ea4565bc9c46801e0a4c4091dd05
-C:/Users/chuns/Downloads/202006appjam/umd\unnamed.png가C:/Users/chuns/Downloads/202006appjam/umd\unnamed - 복사본.png와 같은 파일인거 같아 삭제하였습니다. md5=df2338afe4a8177141d54d743188006c
-C:/Users/chuns/Downloads/202006appjam/umd\wallpaper_001.jpg가C:/Users/chuns/Downloads/202006appjam/umd\wallpaper_001 - 복사본.jpg와 같은 파일인거 같아 삭제하였습니다. md5=a2e077cd8142630121d542504fb3b635
+C:/Users/chuns/Downloads/202006appjam/umd\검색 - 2019-05-20 16_58_01 - 복사본 (3).jpeg가C:/Users/chuns/Downloads/202006appjam/umd\검색 - 2019-05-20 16_58_01 - 복사본 (4).jpeg와 같은 파일인거 같아 삭제하였습니다. md5=6ecbd258202bc987e72cdd5314df1956
+C:/Users/chuns/Downloads/202006appjam/umd\검색 - 2019-05-20 16_58_01 - 복사본 (3).jpeg가C:/Users/chuns/Downloads/202006appjam/umd\검색 - 2019-05-20 16_58_01 - 복사본 (5).jpeg와 같은 파일인거 같아 삭제하였습니다. md5=6ecbd258202bc987e72cdd5314df1956
+C:/Users/chuns/Downloads/202006appjam/umd\검색 - 2019-05-20 16_58_01 - 복사본 (3).jpeg가C:/Users/chuns/Downloads/202006appjam/umd\검색 - 2019-05-20 16_58_01 - 복사본 (6).jpeg와 같은 파일인거 같아 삭제하였습니다. md5=6ecbd258202bc987e72cdd5314df1956
+C:/Users/chuns/Downloads/202006appjam/umd\검색 - 2019-05-20 16_58_01 - 복사본 (3).jpeg가C:/Users/chuns/Downloads/202006appjam/umd\검색 - 2019-05-20 16_58_01 - 복사본.jpeg와 같은 파일인거 같아 삭제하였습니다. md5=6ecbd258202bc987e72cdd5314df1956
+C:/Users/chuns/Downloads/202006appjam/umd\검색 - 2019-05-20 16_58_01 - 복사본 (3).jpeg가C:/Users/chuns/Downloads/202006appjam/umd\검색 - 2019-05-20 16_58_01.jpeg와 같은 파일인거 같아 삭제하였습니다. md5=6ecbd258202bc987e72cdd5314df1956
