@@ -10,6 +10,14 @@ pht=[".jpg",".gif","png","bmp"]
 k = open("log.txt", "w")#log.txt 생성
 sergdir=filedialog.askdirectory(parent=window,title="검색하려는 디렉토리의 이름은?")#input("검색하려는 디렉토리의 이름은?:")
 count=0
+label1=Label(window,text="")
+label2=Label(window,text="")
+def fin():
+    label2.config(text="분석완료")
+    window.update()
+    label1.after(100,label1.destroy())
+    label2.after(100,label2.destroy())
+    window.update()
 for (path, dir, files) in os.walk(sergdir):#지정한 파일 경로 탐색
     for fn in files:#파일들을 순차적으로 탐색
         pt=os.path.join(path, fn)#파일 경로
@@ -28,8 +36,7 @@ for (path, dir, files) in os.walk(sergdir):#지정한 파일 경로 탐색
         if md.count(md5)==0:#일치하는 md5 값이 없다면 해당 값과 이름을 기록
             md.append(md5)
             name.append(pt)
-            print("분석 완료")
-            window.update()
+            fin()
             continue
         photocheck=False
         for i in pht:
@@ -39,7 +46,8 @@ for (path, dir, files) in os.walk(sergdir):#지정한 파일 경로 탐색
         if(photocheck):
             k.write(pt+"와"+name[md.index(md5)]+"가 같은 파일인거 같습니다. md5="+md5+"\n")#파일이 겹치면 해당 사실을 log.txt에 기록
             os.remove(pt)#겹치는 파일 삭제
-        print("분석 완료")
-        window.update()
+        fin()
 k.close()#log.txt 닫음
+label1=Label(text="분석이 완료되었습니다.log.txt를 참고하여 어떤 파일들이 삭제되었는지 내용을 확인하실 수 있습니다.")
+label1.pack()
 window.mainloop()
