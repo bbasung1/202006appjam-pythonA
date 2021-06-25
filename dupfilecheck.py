@@ -2,12 +2,8 @@ import os
 import hashlib
 name=[]
 md=[]
-#strarttime=timeit.default_timer()
 k = open("log.txt", "w")#log.txt 생성
 sergdir=input("검색하려는 디렉토리의 이름은?:")
-#movdir=input("중복값을 옮기려는 디렉토리의 이름은?:")
-#os.makedirs(movdir+"/tmp",exist_ok=True)
-#choose=int(input("같은 파일인지 분석만 하시겠습니까?파일 크기까지 맞을 시 tmp 폴더로 이동시키겠습니까?(1/2):"))
 count=0
 for (path, dir, files) in os.walk(sergdir):#지정한 파일 경로 탐색
     for fn in files:#파일들을 순차적으로 탐색
@@ -25,13 +21,9 @@ for (path, dir, files) in os.walk(sergdir):#지정한 파일 경로 탐색
         if md.count(md5)==0:#일치하는 md5 값이 없다면 해당 값과 이름을 기록
             md.append(md5)
             name.append(pt)
-            #print(os.path.basename(pt))
             print("분석 완료")
             continue
         k.write(pt+"와"+name[md.index(md5)]+"가 같은 파일인거 같습니다. md5="+md5+"\n")#파일이 겹치면 해당 사실을 log.txt에 기록
-        #print(os.path.basename(pt))
         os.remove(pt)#겹치는 파일 삭제
         print("분석 완료")
 k.close()#log.txt 닫음
-#endtime=timeit.default_timer()
-#print("%f"%(endtime - strarttime))
